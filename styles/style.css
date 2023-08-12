@@ -9,13 +9,14 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  padding: 133px 30px;
   margin: auto;
+  background-color: #1b1919;
+  block-size: 100%;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  inline-size: 1200px;
 }
 
 h1,
@@ -28,11 +29,218 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  block-size: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  inline-size: 1px;
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.result__video-container {
+}
+
+.result__video {
+  /* width: 100%;
+  height: 100%; */
+  width: 711px;
+  /* height: 386px; */
+}
+
+.search-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.search-form__checkbox:checked + span {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+}
+
+.search-form__fieldset {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  gap: 5px;
+}
+
+.search-form__textfield {
+  display: flex;
+  height: 27px;
+  align-items: center;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: rgba(255 255 255 / 70%);
+  font-family:
+    Fira,
+    sans-serif,
+    Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 10px;
+  line-height: normal;
+
+  /* width: 225px; */
+}
+
+.button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family:
+    Fira,
+    sans-serif,
+    Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  gap: 10px;
+  line-height: normal;
+  text-align: center;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-family:
+    Fira,
+    sans-serif,
+    Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  align-self: flex-end;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.title {
+  color: #fff;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%; /* 70.5px */
+  text-transform: uppercase;
+}
+
+.content__list {
+  display: flex;
+  overflow: auto;
+  max-height: 298px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.content__card-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px; /* 90% */
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
 }
