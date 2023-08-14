@@ -65,13 +65,12 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
-  height: 386px;
 }
 
 .result__video {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 386px;
   object-fit: fill;
   object-position: center;
 }
@@ -136,8 +135,8 @@ ol {
 
 .search-form__checkbox-list {
   position: relative;
-  top: 6px;
   display: flex;
+  padding-top: 6px;
   gap: 14px;
 }
 
@@ -215,7 +214,6 @@ ol {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  gap: 10px;
   line-height: normal;
 }
 
@@ -299,7 +297,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   overflow-x: auto;
-  overflow-x: hidden;
 }
 
 .content__list::-webkit-scrollbar {
