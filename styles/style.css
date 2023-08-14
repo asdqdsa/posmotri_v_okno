@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   padding: 133px 30px;
   margin: auto;
   background-color: #1b1919;
@@ -50,6 +51,7 @@ ol {
 
 .content {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
